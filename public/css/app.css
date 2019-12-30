@@ -1,0 +1,118 @@
+.navigation {
+  background-color: transparent;
+  position: absolute;
+  background-color: #FCFEF5;
+}
+
+.nav-line {
+  border-bottom: 1.3px solid black;
+  padding-bottom: 0px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+/* stroke */
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+.nav-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.mooiekleur {
+  background: #ff7e5f;
+  background: -webkit-gradient(linear, left top, right top, from(#ff7e5f), to(#feb47b));
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  overflow: auto;
+}
+
+.bg-header {
+  background-color: #FCFEF5;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+}
+
+.sterk {
+  color: #F05959;
+}
+
+.about {
+  background-color: #FBF8F5;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+
+.aboutContent {
+  width: 50%;
+}
+
+.imgText {
+  padding-left: 35px;
+  width: 20%;
+}
+

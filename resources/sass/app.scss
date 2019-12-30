@@ -1,0 +1,211 @@
+body {
+    overflow-x: hidden;
+}
+
+// Navbar
+.navigation {
+    background-color: transparent;
+    position: absolute;
+    background-color: #FCFEF5;
+}
+
+.nav-line {
+    border-bottom: 1.3px solid rgb(0, 0, 0);
+    padding-bottom: 0px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+.nav-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+// First div
+.bg-header {
+    background-color: #FCFEF5;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sterk {
+    color: #F05959;
+}
+
+// About us
+.about {
+    background-color: #FBF8F5;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+
+}
+
+.aboutContent {
+    width: 50%;
+}
+
+.imgText {
+    padding-left: 35px;
+    width: 20%;
+}
+
+.mainDiv {
+    background-color: #FBF8F5;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+
+.aboutMe {
+    /*float: left;*/
+    /*width: 50%;*/
+    /*padding-right: 5px;*/
+    float: left;
+    padding: 10px;
+
+}
+
+// Skills
+.skills {
+    /*float: right;
+    width: 49%;*/
+    float: left;
+    padding: 10px;
+}
+
+.progress {
+    margin-top: 15px;
+    height: 20%;
+}
+
+.progressText {
+    background-color: white;
+    width: 55px;
+}
+
+.avatar {
+    padding-left: 350px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #FBF8F5;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.bg-header {
+    height: 37vh;
+}
+
+// My work
+
+.myWork {
+    background-color: #FCFEF5;
+    padding-bottom: 50px;
+    padding-top: 35px;
+    overflow: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.myWorkText {
+    font-family: 'Raleway', sans-serif; 
+    padding-bottom: 50px;
+}
+
+.card {
+    margin-right: 0px;  
+}
+
+
+// Contact
+.contact {
+    background-color: #FBF8F5;
+    padding-top: 35px;
+}
